@@ -65,19 +65,19 @@ brand_css = """
         transition: transform 0.1s ease;
     }
     div.stButton > button:first-child:hover {
-        background-color: #1a2634 !important;
+        background-color: #f4efe6 !important;
         color: #D77E33 !important;
         transform: scale(1.01);
     }
     div[data-testid="stDownloadButton"] > button {
-        background-color: #1a2634 !important;
+        background-color: #dd7733 !important;
         color: #F4efe6 !important;
         border-radius: 8px !important;
         width: 100%;
     }
     div[data-testid="stDownloadButton"] > button:hover {
         background-color: #D77E33 !important;
-        color: #1a2634 !important;
+        color: #f4efe6 !important;
     }
     .stExpander {
         background-color: #ffffff !important;
