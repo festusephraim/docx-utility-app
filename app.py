@@ -52,7 +52,7 @@ brand_css = """
         color: #1a2634 !important;
     }
     div[data-testid="stFileUploader"]:hover * {
-        color: #F4efe6 !important;
+        color: #dd7733 !important;
     }
     div.stButton > button:first-child {
         background-color: #D77E33 !important;
