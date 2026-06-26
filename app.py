@@ -4,8 +4,28 @@ import re
 import io
 import os
 
-# 1. Custom Page Configuration & Brand Styling
-st.set_page_config(page_title="deep9 Clean", page_icon="🔒", layout="centered")
+import base64
+import streamlit as st
+
+# 1. Helper function to encode the image
+def get_base64_image(image_path):
+    try:
+        with open(image_path, "rb") as image_file:
+            encoded_string = base64.b64encode(image_file.read()).decode()
+        return f"data:image/png;base64,{encoded_string}"
+    except FileNotFoundError:
+        # Fallback icon in case the image fails to load locally or on Git
+        return "🔒"
+
+# 2. Convert your local file 
+logo_base64 = get_base64_image("deep9.png")
+
+# 3. Custom Page Configuration & Brand Styling
+st.set_page_config(
+    page_title="deep9 Clean", 
+    page_icon=logo_base64, 
+    layout="centered"
+)
 
 brand_css = """
 <style>
@@ -113,8 +133,8 @@ st.markdown(brand_css, unsafe_allow_html=True)
 # 2. Main Interface Header Elements
 st.markdown("<h1 style='text-align: center; font-size: 2.8rem; font-weight: 800; margin-bottom: 0px;'>deep<span style='color:#D77E33; background-color:#1a2634; padding: 2px 8px; border-radius:6px;'>9</span> CLEAN</h1>", unsafe_allow_html=True)
 # --- NEW CONVERTING USER TAGLINE ---
-st.markdown("<p style='text-align: center; opacity: 0.9; font-size: 1.05rem; margin-top: 15px; margin-bottom: 30px; line-height: 1.6; max-width: 650px; margin-left: auto; margin-right: auto;'>Wipe hidden editing history, author metadata, and tracked changes from your Word documents, or extract your images instantly. Need to process multiple documents? Check the batch processing box below to upload up to 5 files at once.</p>", unsafe_allow_html=True)
-st.markdown("<p style='text-align: center; opacity: 0.9; font-size: 1.05rem; margin-top: 12px; margin-bottom: 24px; line-height: 1.4; max-width: 650px; margin-left: auto; margin-right: auto;'> Need to process multiple documents? Check the batch processing box below to upload up to 5 files at once.</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; opacity: 0.9; font-size: 1.05rem; margin-top: 15px; margin-bottom: 30px; line-height: 1.6; max-width: 650px; margin-left: auto; margin-right: auto;'>Wipe hidden editing history, author metadata, and tracked changes from your Word documents, or extract your images instantly.</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; opacity: 0.9; font-size: 0.85rem; font-style: italic; color: #DD77E3; margin-top: 8px; margin-bottom: 24px; line-height: 1.4; max-width: 500px; margin-left: auto; margin-right: auto;'> Need to process multiple documents? Check the batch processing box below to upload up to 5 files at once.</p>", unsafe_allow_html=True)
 
 # 3. Mode Toggle Checkbox
 enable_bulk = st.checkbox("🔄 Upload multiple files (Up to 5)")
