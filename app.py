@@ -25,7 +25,7 @@ brand_css = """
         transition: all 0.3s ease;
     }
     div[data-testid="stFileUploader"]:hover {
-        border-color: #d7E733 !important;
+        border-color: #D77E33 !important;
         background-color: #1a2634;
     }
     div[data-testid="stFileUploader"] * {
@@ -35,7 +35,7 @@ brand_css = """
         color: #F4efe6 !important;
     }
     div.stButton > button:first-child {
-        background-color: #d7E733 !important;
+        background-color: #D77E33 !important;
         color: #1a2634 !important;
         border: 2px solid #1a2634 !important;
         font-weight: 700 !important;
@@ -46,7 +46,7 @@ brand_css = """
     }
     div.stButton > button:first-child:hover {
         background-color: #1a2634 !important;
-        color: #d7E733 !important;
+        color: #D77E33 !important;
         transform: scale(1.01);
     }
     div[data-testid="stDownloadButton"] > button {
@@ -56,7 +56,7 @@ brand_css = """
         width: 100%;
     }
     div[data-testid="stDownloadButton"] > button:hover {
-        background-color: #d7E733 !important;
+        background-color: #D77E33 !important;
         color: #1a2634 !important;
     }
     .stExpander {
@@ -79,7 +79,7 @@ brand_css = """
         font-family: 'Inter', sans-serif;
     }
     .deep9-footer a {
-        color: #d7E733 !important;
+        color: #D77E33 !important;
         text-decoration: none;
         font-weight: bold;
     }
@@ -111,7 +111,7 @@ brand_css = """
 st.markdown(brand_css, unsafe_allow_html=True)
 
 # 2. Main Interface Header Elements
-st.markdown("<h1 style='text-align: center; font-size: 2.8rem; font-weight: 800; margin-bottom: 0px;'>DEEP<span style='color:#d7E733; background-color:#1a2634; padding: 2px 8px; border-radius:6px;'>9</span> CLEAN</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; font-size: 2.8rem; font-weight: 800; margin-bottom: 0px;'>deep<span style='color:#D77E33; background-color:#1a2634; padding: 2px 8px; border-radius:6px;'>9</span> CLEAN</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center; opacity: 0.8; font-size: 1.1rem; margin-top: 10px; margin-bottom: 30px;'>Anonymize document history and extract hidden assets instantly.</p>", unsafe_allow_html=True)
 
 # 3. Mode Toggle Checkbox
@@ -227,21 +227,21 @@ with st.expander("ℹ️ Understanding App Results & Microsoft Word Behavior"):
     *   **'Personal Information found':** The instant you open any file on a local computer, Microsoft Word immediately auto-appends a fresh timestamp and links your local desktop system handle as the active viewer. Your past editing hours and authentic historical creators remain thoroughly wiped out.
     """)
 
-# 6. Deep9 Ecosystem Marketing & System Navigation Footer
+# 6. deep9 Ecosystem Marketing & System Navigation Footer
 footer_html = """
 <div class="deep9-footer">
-    <div style="font-size: 1.4rem; font-weight: 800; letter-spacing: 1px;">DEEP9 SYSTEMS</div>
+    <div style="font-size: 1.4rem; font-weight: 800; letter-spacing: 1px;">deep9 SYSTEMS</div>
     <p style="color: #F4efe6 !important; opacity: 0.8; font-size: 0.95rem; margin-top: 5px;">
         Speed without depth is half-baked growth. Build structural excellence with us.
     </p>
     <div class="footer-grid">
         <div>
-            <span style="font-weight:bold; color:#d7E733;">💼 Professional Track:</span><br>
+            <span style="font-weight:bold; color:#D77E33;">💼 Professional Track:</span><br>
             Need an instant, impact-driven, ATS-ready CV and matching cover letter? 
             <a href="https://deep9systems.com" target="_blank">Click here to build your profile →</a>
         </div>
         <div>
-            <span style="font-weight:bold; color:#d7E733;">🔬 Academic Track:</span><br>
+            <span style="font-weight:bold; color:#D77E33;">🔬 Academic Track:</span><br>
             Struggling with structure or unsure if your supervisor will approve?
             <a href="https://deep9systems.com" target="_blank">Validate your research topic now →</a>
         </div>
